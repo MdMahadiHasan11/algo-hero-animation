@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useRouter } from "next/navigation"
-import { Canvas } from "@react-three/fiber"
-import { Environment, Float, Text3D } from "@react-three/drei"
-import { Navigation } from "@/components/navigation"
-import { TradingDashboard } from "@/components/trading-dashboard"
+import { Navigation } from "@/components/navigation";
+import { TradingDashboard } from "@/components/trading-dashboard";
+import { Environment, Float, Text3D } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { useRouter } from "next/navigation";
 
 export default function TradingPage() {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <main className="relative w-full h-screen overflow-hidden bg-black">
@@ -16,9 +16,14 @@ export default function TradingPage() {
           <color attach="background" args={["#050505"]} />
           <Environment preset="city" />
 
-          <Float speed={1} rotationIntensity={0.2} floatIntensity={0.5} position={[0, 3, 0]}>
+          <Float
+            speed={1}
+            rotationIntensity={0.2}
+            floatIntensity={0.5}
+            position={[0, 3, 0]}
+          >
             <Text3D
-              font="/fonts/Geist_Bold.json"
+              // font="/fonts/Geist_Bold.json"
               size={1.2}
               height={0.2}
               curveSegments={12}
@@ -29,7 +34,11 @@ export default function TradingPage() {
               bevelSegments={5}
             >
               Trading Dashboard
-              <meshStandardMaterial color="#14b8a6" metalness={0.8} roughness={0.2} />
+              <meshStandardMaterial
+                color="#14b8a6"
+                metalness={0.8}
+                roughness={0.2}
+              />
             </Text3D>
           </Float>
         </Canvas>
@@ -43,5 +52,5 @@ export default function TradingPage() {
         </div>
       </div>
     </main>
-  )
+  );
 }

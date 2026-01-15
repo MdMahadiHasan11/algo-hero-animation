@@ -24,7 +24,7 @@ export default function BacktestPage() {
 
           <Float speed={1} rotationIntensity={0.2} floatIntensity={0.5} position={[0, 3, 0]}>
             <Text3D
-              font="/fonts/Geist_Bold.json"
+              // font="/fonts/Geist_Bold.json"
               size={1.2}
               height={0.2}
               curveSegments={12}

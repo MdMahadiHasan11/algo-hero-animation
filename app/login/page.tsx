@@ -25,7 +25,7 @@ export default function LoginPage() {
 
           <Float speed={2} rotationIntensity={0.5} floatIntensity={1} position={[0, 3, 0]}>
             <Text3D
-              font="/fonts/Geist_Bold.json"
+              // font="/fonts/Geist_Bold.json"
               size={1.2}
               height={0.2}
               curveSegments={12}
